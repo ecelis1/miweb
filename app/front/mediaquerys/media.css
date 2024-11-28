@@ -1,0 +1,51 @@
+/* Media query para pantallas de 992px de ancho o menos */
+@media (max-width: 991px) {
+    #navbarNavAltMarkup {
+        background-color: rgba(234, 194, 74, 0.233) !important;
+        padding: 10px;
+    }
+}
+
+/* Media para seccion sobre mi */
+@media (max-width: 768px) {
+    .section-sobre-mi .col-6 {
+        padding: 0;
+    }
+    .footer {
+        padding: 20px 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .footer-text {
+        font-size: 10px;
+    }
+    
+    .social-icons {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+}
+
+/* Media para seccion sobre mi */
+@media (max-width: 634px) {
+    .header {
+        background-image: url(../img/siemprealritmochiquito.svg);
+        background-position: top center; /* Alinea la imagen al centro verticalmente y arriba horizontalmente */
+        background-size: cover; /* Ajusta la imagen para que quepa completamente dentro del contenedor */
+        background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+        padding-top: 60px; /* Añade un espacio superior para dejar espacio para el menú */
+        position: relative; /* Permite el apilamiento del contenido encima */
+        min-height: 100vh; /* Altura mínima de la sección igual a 100% del viewport height */
+}
+    .navbar {
+        position: absolute; /* Coloca la barra de navegación en posición absoluta */
+        top: 0; /* Asegura que esté en la parte superior del header */
+        left: 0; /* Alinea la barra de navegación a la izquierda del header */
+        right: 0; /* Alinea la barra de navegación a la derecha del header */
+    }
+    .card-text {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}

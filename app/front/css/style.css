@@ -1,0 +1,197 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+img {
+    height: auto;
+    width: 80px;
+}
+
+/* CABECERA */
+
+.header {
+    background-image: url(../img/siemprealritmo.svg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 10px;
+}
+
+.navbar,
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+/* SOBRE MI */
+.seccion-sobre-mi .container{
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.seccion-sobre-mi {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    align-content: center;
+    justify-content: center;
+}
+
+.seccion-sobre-mi h1 {
+    color: #f0ad4e;
+    /* Color de texto personalizado */
+}
+
+.seccion-sobre-mi p {
+    text-align: justify;
+}
+
+/* BOX SPOTIFY */
+
+#boxspotify{
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+#boxspotify::before{
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-image: url('../img/slider3.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.7);
+    opacity: 1;
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+}
+
+#boxspotify .container{
+    padding: 50px;
+}
+
+/* EXPERIENCIA */
+.experiencia{
+    min-height: 100vh;
+    padding: 50px;
+    justify-content: center;
+    align-content: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.experiencia .container{
+    justify-content: center;
+    align-items: center;
+}
+
+.text-experience p{
+    text-align: justify;
+    font-size: 0.6rem;
+}
+
+.carousel-inner{
+    border-radius: 10px;
+}
+
+/* SERVICIOS */
+#services {
+    border-radius: 10px;
+    /* Color de fondo personalizado */
+    min-height: 100vh;
+    /* Alto mínimo de la sección igual al viewport height */
+    padding: 20px;
+    /* Espaciado interno */
+    align-content: center;
+}
+
+.service-card {
+    margin-bottom: 20px;
+    /* Espacio entre las cards */
+}
+
+.text-center-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* CARDS STYLES */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-text {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    /* Escala la tarjeta al 110% del tamaño original */
+    transition: transform 0.3s ease;
+    /* Agrega una transición suave */
+}
+
+
+/* BOTON PARA SUBIR PARA ARRIBA */
+#btnScrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #eac24a;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    /* Ajusta el tamaño del botón */
+    height: 40px;
+    /* Ajusta el tamaño del botón */
+    padding: 0;
+    /* Quita el padding para que el contenido no afecte el tamaño */
+    border-radius: 50%;
+    /* Hace que el botón sea redondo */
+}
+
+#btnScrollToTop:hover {
+    background-color: #555;
+}
+
+/* FOOTER */
+.footer {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+.social-icons {
+    color: rgb(234, 194, 74);
+    font-size: 24px;
+    margin-right: 10px;
+}
