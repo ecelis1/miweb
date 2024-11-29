@@ -50,3 +50,15 @@ async function handleCheckout() {
         console.error('Error:', error);
     }
 }
+
+window.onload = function () {
+    const videoVisto = localStorage.getItem('videoVisto');
+    const video = document.getElementById('intro-video-container');
+    if (!videoVisto) {
+        video.style.display = 'block';
+        localStorage.setItem('videoVisto', 'true');
+    } else {
+        video.classList.add('visto');
+        document.getElementById('content').style.display = 'block';
+    }
+};
